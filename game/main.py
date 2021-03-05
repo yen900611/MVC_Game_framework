@@ -4,8 +4,8 @@ from game import Game
 if __name__ == "__main__":
     pygame.init()
     game = Game()
-    pass
+    command = game.controller.get_keyboard_command()
     while game.isRunning():
-        game.update()
+        game.update(command)
 
     pygame.quit()

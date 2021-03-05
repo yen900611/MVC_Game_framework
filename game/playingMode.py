@@ -1,10 +1,10 @@
 import pygame
-from setting import *
+# from setting import *
+from setting import FPS
+
 
 class PlayingMode():
     def __init__(self):
-        pygame.font.init()
-        self.font = pygame.font.Font(pygame.font.match_font("arial", bold=True), 40)
         self.running = True
         self.clock = pygame.time.Clock()
         self.all_sprite = pygame.sprite.Group()
